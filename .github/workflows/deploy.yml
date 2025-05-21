@@ -1,4 +1,4 @@
-name: Deploy DigitalOcean to Laravel App
+name: Deploy to Laravel App
 
 on:
   push:
