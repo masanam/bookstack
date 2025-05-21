@@ -1,0 +1,21 @@
+name: Deploy to Laravel App
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    - name: Deploy to DigitalOcean
+      uses: appleboy/ssh-action@v1.1.0
+      with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          script:  |
+                cd /home
+                ~/deploy.sh
