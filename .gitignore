@@ -1,8 +1,10 @@
+/vendor
 /node_modules
 /.vscode
 /composer
 /coverage
 Homestead.yaml
+.env
 .idea
 npm-debug.log
 yarn-error.log
