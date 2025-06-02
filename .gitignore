@@ -4,7 +4,6 @@
 /composer
 /coverage
 Homestead.yaml
-.env
 .idea
 npm-debug.log
 yarn-error.log
@@ -33,3 +32,6 @@ phpstan.neon
 esbuild-meta.json
 .phpactor.json
 /*.zip
+.env
+/.env
+/.env.example
